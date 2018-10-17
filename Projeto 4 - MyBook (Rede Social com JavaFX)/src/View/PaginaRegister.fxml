@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PaginaRegisterController">
+   <children>
+      <AnchorPane>
+         <children>
+            <ImageView fx:id="background" blendMode="MULTIPLY" depthTest="ENABLE" fitHeight="450.0" fitWidth="316.0">
+               <image>
+                  <Image url="@../arquivosdainterface/background.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane>
+         <children>
+            <ImageView blendMode="SRC_ATOP" fitHeight="39.0" fitWidth="54.0" layoutX="10.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../arquivosdainterface/backButton.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="58.0" layoutY="114.0" text="Username" />
+            <Label layoutX="79.0" layoutY="153.0" text="Senha" />
+            <Button fx:id="backButton" layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onAction="#apertarBackButton" opacity="0.0" prefHeight="29.0" prefWidth="33.0" />
+            <Button id="loginButton" fx:id="efetuarRegistroButton" layoutX="66.0" layoutY="381.0" mnemonicParsing="false" onAction="#apertarEfetuarRegistro" style="-fx-background-color: #D8D8D8;" text="EFETUAR REGISTRO" textFill="#390ae1">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <font>
+                  <Font name="Arial Narrow" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="erroUser" layoutX="53.0" layoutY="20.0" text="ERRO: Já existe um usuário com esse username" textFill="#ee0000" visible="false" />
+            <TextField fx:id="campoUsername" layoutX="119.0" layoutY="110.0" />
+            <PasswordField fx:id="campoPassword" layoutX="119.0" layoutY="149.0" />
+            <TextField fx:id="campoNome" layoutX="119.0" layoutY="186.0" />
+            <TextField fx:id="campoEmail" layoutX="119.0" layoutY="221.0" />
+            <DatePicker fx:id="campoData" layoutX="119.0" layoutY="260.0" />
+            <TextField fx:id="campoEndereco" layoutX="119.0" layoutY="301.0" />
+            <TextField fx:id="campoTelefone" layoutX="119.0" layoutY="341.0" />
+            <Label layoutX="58.0" layoutY="190.0" text="Seu nome" />
+            <Label layoutX="79.0" layoutY="225.0" text="Email" />
+            <Label layoutX="47.0" layoutY="264.0" text="Nascimento" />
+            <Label layoutX="22.0" layoutY="305.0" text="Nome da Cidade" />
+            <Label layoutX="62.0" layoutY="345.0" text="Telefone" />
+            <HBox alignment="CENTER" layoutY="41.0" prefHeight="58.0" prefWidth="316.0">
+               <children>
+                  <ImageView fitHeight="61.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../arquivosdainterface/title.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

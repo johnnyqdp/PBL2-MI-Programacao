@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PaginaPerfilController">
+   <children>
+      <AnchorPane>
+         <children>
+            <ImageView fx:id="background" blendMode="MULTIPLY" depthTest="ENABLE" fitHeight="450.0" fitWidth="316.0">
+               <image>
+                  <Image url="@../arquivosdainterface/background.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane>
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="316.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../arquivosdainterface/hud2.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="186.0" layoutY="19.0" mnemonicParsing="false" onAction="#apertaBotaoFeed" opacity="0.0" prefHeight="25.0" prefWidth="25.0" />
+            <Button layoutX="271.0" layoutY="19.0" mnemonicParsing="false" onAction="#apertaBotaoBusca" opacity="0.0" prefHeight="31.0" prefWidth="33.0" />
+            <Label fx:id="nome" alignment="CENTER" layoutX="4.0" layoutY="271.0" prefHeight="26.0" prefWidth="310.0" text="Nome do Usuário">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="username" alignment="CENTER" layoutX="2.0" layoutY="74.0" prefHeight="17.0" prefWidth="310.0" text="username" />
+            <Label fx:id="data" alignment="CENTER" layoutX="4.0" layoutY="297.0" prefHeight="17.0" prefWidth="310.0" text="dataNascimento" />
+            <Label fx:id="endereco" alignment="CENTER" layoutX="3.0" layoutY="314.0" prefHeight="17.0" prefWidth="310.0" text="endereco" />
+            <Label fx:id="email" alignment="CENTER" layoutX="3.0" layoutY="331.0" prefHeight="17.0" prefWidth="310.0" text="email" />
+            <Label fx:id="telefone" alignment="CENTER" layoutX="2.0" layoutY="348.0" prefHeight="17.0" prefWidth="310.0" text="telefone" />
+            <Button id="loginButton" layoutX="39.0" layoutY="365.0" mnemonicParsing="false" onAction="#apertaBotaoVerPostagens" prefHeight="39.0" prefWidth="112.0" style="-fx-background-color: #D8D8D8;" text="POSTAGENS" textFill="#390ae1">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button id="loginButton" layoutX="168.0" layoutY="365.0" mnemonicParsing="false" onAction="#apertaBotaoVerAmigos" prefHeight="39.0" prefWidth="103.0" style="-fx-background-color: #D8D8D8;" text="AMIGOS" textFill="#390ae1">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <HBox alignment="CENTER" layoutX="-1.0" layoutY="91.0" prefHeight="180.0" prefWidth="316.0">
+               <children>
+                  <ImageView fx:id="fotoUsuario" fitHeight="170.0" fitWidth="166.0" onMouseClicked="#apertaFoto" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../arquivosdainterface/semFoto.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
