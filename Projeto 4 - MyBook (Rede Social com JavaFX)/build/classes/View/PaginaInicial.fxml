@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="450.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PaginaInicialController">
+   <children>
+      <AnchorPane>
+         <children>
+            <ImageView fx:id="background" blendMode="MULTIPLY" depthTest="ENABLE" fitHeight="450.0" fitWidth="316.0">
+               <image>
+                  <Image url="@../arquivosdainterface/background.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane>
+         <children>
+            <HBox alignment="CENTER" layoutX="8.0" layoutY="75.0" prefHeight="150.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../arquivosdainterface/title.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="219.0" prefHeight="113.0" prefWidth="316.0" style="-fx-spacing: 10;">
+               <children>
+                  <Button id="loginButton" fx:id="loginButton" mnemonicParsing="false" onAction="#apertarBotaoLogin" style="-fx-background-color: #D8D8D8;" text="FAZER LOGIN" textFill="#390ae1">
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                     <font>
+                        <Font name="Arial Narrow" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button id="loginButton" fx:id="registerButton" mnemonicParsing="false" onAction="#apertarBotaoRegistrar" style="-fx-background-color: #D8D8D8;" text="CRIAR CONTA" textFill="#390ae1">
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                     <font>
+                        <Font name="Arial Narrow" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

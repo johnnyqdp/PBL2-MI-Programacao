@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PaginaCriarPostController">
+   <children>
+      <AnchorPane>
+         <children>
+            <ImageView fx:id="background" blendMode="MULTIPLY" depthTest="ENABLE" fitHeight="450.0" fitWidth="316.0">
+               <image>
+                  <Image url="@../arquivosdainterface/background.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane>
+         <children>
+            <Button layoutX="131.0" layoutY="368.0" mnemonicParsing="false" onAction="#apertaBotaoSair" text="Voltar" />
+            <Button layoutX="172.0" layoutY="312.0" mnemonicParsing="false" onAction="#apertaBotaoEnviar" text="ENVIAR">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Label fx:id="labelArquivo" layoutX="55.0" layoutY="336.0" prefHeight="16.0" prefWidth="117.0">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </Label>
+            <Label fx:id="erro" layoutX="24.0" layoutY="41.0" prefHeight="32.0" prefWidth="255.0" textFill="#f50000" />
+            <VBox layoutX="55.0" layoutY="73.0" prefHeight="38.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo da postagem:" wrappingWidth="134.13671875" />
+                  <TextArea fx:id="textArea" prefHeight="177.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="55.0" layoutY="125.0" prefHeight="187.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Escreva sua postagem:" wrappingWidth="134.13671875" />
+                  <TextArea fx:id="textArea2" prefHeight="177.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <Button layoutX="55.0" layoutY="311.0" mnemonicParsing="false" onAction="#apertaBotaoAnexar" text="Anexar arquivo" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

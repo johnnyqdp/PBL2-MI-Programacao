@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PaginaBuscaController">
+   <children>
+      <AnchorPane>
+         <children>
+            <ImageView fx:id="background" blendMode="MULTIPLY" depthTest="ENABLE" fitHeight="450.0" fitWidth="316.0">
+               <image>
+                  <Image url="@../arquivosdainterface/background.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="painel">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="316.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../arquivosdainterface/hud3.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="campoBusca" layoutX="59.0" layoutY="81.0" prefHeight="26.0" prefWidth="174.0" promptText="Faça a sua busca..." />
+            <Button layoutX="227.0" layoutY="19.0" mnemonicParsing="false" onAction="#apertaBotaoPerfil" opacity="0.0" prefHeight="25.0" prefWidth="28.0" />
+            <Button layoutX="184.0" layoutY="19.0" mnemonicParsing="false" onAction="#apertaBotaoFeed" opacity="0.0" prefHeight="25.0" prefWidth="28.0" />
+            <Button layoutX="236.0" layoutY="81.0" mnemonicParsing="false" onAction="#apertaBotaoBusca" prefHeight="25.0" prefWidth="28.0" text="Ok">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
+            <HBox fx:id="hbox" alignment="CENTER" layoutY="132.0" prefHeight="273.0" prefWidth="316.0">
+               <children>
+                  <ListView fx:id="listView" onMouseClicked="#apertaAlgumUsuario" prefHeight="273.0" prefWidth="242.0" />
+               </children></HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
